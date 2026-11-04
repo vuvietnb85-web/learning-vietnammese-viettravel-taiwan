@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Mực Atlas — 18 ứng dụng Thu Đông 2026",
+      "hasCanvas": false,
+      "bodyTextLen": 9356,
+      "bodyTextHash": "88491505db588720bc80a42fd48347ab947608554c8705738e0944244cb8a639",
+      "bodyTextPrefix": "Tới danh mục ứng dụng FW 2026 · TAIPEI INK Mực Atlas Việt trước ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Mực Atlas — 18 ứng dụng Thu Đông 2026",
+      "hasCanvas": false,
+      "bodyTextLen": 9328,
+      "bodyTextHash": "3a99a2eea832e22089687c0b3f871155a9d237a921326212069394cf3e81a7ab",
+      "bodyTextPrefix": "Tới danh mục ứng dụng FW 2026 · TAIPEI INK Mực Atlas Việt trước ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

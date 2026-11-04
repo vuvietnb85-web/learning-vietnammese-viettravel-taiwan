@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @font-face {
+      font-family: "Newsreader";
+      src: url("fonts/newsreader.ttf") format("truetype");
+      font-weight: 200 800;
+      font-style: normal;
+      font-display: block;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #F3EEE6;
+      color: #1A1410;
+    }
+    .sheet {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F3EEE6;
+    }
+    .grain {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: url("paper-grain.png");
+      background-size: 480px 480px;
+      mix-blend-mode: multiply;
+      opacity: 0.4;
+    }
+    .wash {
+      position: absolute;
+      width: 640px;
+      height: 640px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(205, 181, 165, 0.38) 0%, rgba(243, 238, 230, 0) 70%);
+      pointer-events: none;
+    }
+    .row {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 64px;
+    }
+    .mark { display: block; flex: none; }
+    .lockup {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+    .season {
+      font-family: Newsreader, "Times New Roman", serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.34em;
+      color: #4A5340;
+      font-variation-settings: "opsz" 20, "wght" 540;
+      margin-bottom: 22px;
+      padding-left: 0.34em;
+    }
+    h1 {
+      font-family: Newsreader, "Times New Roman", serif;
+      font-weight: 450;
+      font-size: 286px;
+      line-height: 0.76;
+      letter-spacing: -0.045em;
+      font-variation-settings: "opsz" 144, "wght" 450;
+      color: #1A1410;
+    }
+    h1 span { display: block; }
+    .rule {
+      width: 72px;
+      height: 4px;
+      background: #8B3A2F;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="wash"></div>
+    <div class="grain"></div>
+    <div class="row">
+      <svg class="mark" width="108" height="128" viewBox="0 0 78 92" aria-hidden="true">
+        <rect x="37" y="2" width="4" height="16" rx="1" fill="#1A1410"/>
+        <path d="M39 16 C28 22 16 30 16 42 C22 36 32 34 39 36 C46 34 56 36 62 42 C62 30 50 22 39 16 Z" fill="#4A5340"/>
+        <circle cx="39" cy="60" r="28" fill="#8B3A2F"/>
+        <ellipse cx="29" cy="56" rx="8" ry="12" fill="#CDB5A5" opacity="0.35"/>
+      </svg>
+      <div class="lockup">
+        <p class="season">FALL / WINTER 2026</p>
+        <h1>
+          <span>Mực</span>
+          <span>Atlas</span>
+        </h1>
+        <div class="rule"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
