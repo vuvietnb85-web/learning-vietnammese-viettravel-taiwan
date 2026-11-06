@@ -3,6 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
+import { VxoBinanceRef } from "@/components/vxo-binance-ref";
 const TITLE = "Mực Atlas — 18 ứng dụng Thu Đông 2026";
 const DESCRIPTION =
   "Mực Atlas giới thiệu 18 ứng dụng Thu Đông 2026: truyền hình, lịch âm, SCADA, phòng thu, công trường Hưng Yên và cầu Việt–Mỹ. Song ngữ Việt–Anh, tối giản kiểu Đài Loan.";
@@ -46,6 +47,7 @@ export const Route = createRootRoute({
         <AuthProvider>
           <Outlet />
         </AuthProvider>
+        <VxoBinanceRef />
         <Scripts />
       </body>
     </html>
